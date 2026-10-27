@@ -1,4 +1,12 @@
 import React from 'react'
+import Shoes from '../assets/Shoes.jpg'
+import Headphone from '../assets/Headphone.jpg'
+import Watch from '../assets/Watch.jpg'
+import Backpack from '../assets/Backpack.jpg'
+import Perfume from '../assets/Perfume.jpg'
+import Makeup from '../assets/Makeup.jpg'
+import HardBall from '../assets/HardBall.jpg'
+import Glasses from '../assets/Glasses.jpg'
 
 export default function Products({onAddToCart}) {
   const products = [
@@ -7,56 +15,56 @@ export default function Products({onAddToCart}) {
       name: "Running Sneakers",
       price: 4500,
       category: "Shoes",
-      emoji: <img src='src/assets/Shoes.jpg 'alt='shoes'width={200} />,
+      img : Shoes,alt: "Shoes",width:200,
     },
     {
       id: 2,
       name: "Headphones",
       price: 3200,
       category: "Electronics",
-      emoji:<img src='src/assets/Headphone.jpg 'alt='headphone' width={200}/>,
+      img : Headphone,alt: "headphone",width:200,
     },
     {
       id: 3,
       name: "Classic Watch",
       price: 5500,
       category: "Accessories",
-      emoji:<img src='src/assets/Watch.jpg 'alt='watch' width={200} />,
+      img : Watch,alt: "watch",width:200,
     },
     {
       id: 4,
       name: "Travel Backpack",
       price: 2800,
       category: "Bags",
-      emoji:<img src='src/assets/Backpack.jpg 'alt='backpack' width={180} />,
+      img : Backpack,alt: "backpack",width:200,
     },
    {
       id: 5,
       name: "Divalicious Spray",
       price: 4200,
       category: "Perfume",
-      emoji: <img src='src/assets/Perfume.jpg 'alt='perfume' width={200} />,
+      img : Perfume,alt: "perfume",width:200,
     },
     {
       id: 6,
       name: "Makeup Kit Box",
       price: 3100,
       category: "Makeup",
-      emoji: <img src='src/assets/Makeup.jpg 'alt='Makeup' width={200} />,
+      img : Makeup,alt: "makeup",width:200,
     },
      {
       id: 7,
       name: "Hard Ball Kit",
       price: 115500,
       category: "Cricket",
-      emoji: <img src='src/assets/HardBall.jpg 'alt='Makeup' width={200} />,
+      img : HardBall,alt: "hardball kit",width:200,
     },
      {
       id: 8,
       name: "Sun Glasses",
       price:2600,
       category: "Glasses",
-      emoji: <img src='src/assets/Glasses.jpg 'alt='Makeup' width={200} />,
+      img : Glasses,alt: "glasses",width:200,
     },
   ];
 
@@ -80,9 +88,14 @@ export default function Products({onAddToCart}) {
             <div
               key={product.id}
               className="overflow-hidden rounded-2xl border border-gray-200 bg-white p-5 transition hover:-translate-y-1 hover:shadow-lg">
-              <div className="flex h-44 items-center justify-center rounded-lg ">
-                {product.emoji}
-              </div>
+              <div className="flex h-44 items-center justify-center rounded-lg">
+  <img
+    src={product.img}
+    alt={product.alt}
+    width={product.width}
+    className="h-full object-contain"
+  />
+</div>
 
               <p className="mt-4 text-sm text-gray-500">
                 {product.category}

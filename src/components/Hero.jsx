@@ -1,4 +1,5 @@
 import React from 'react'
+import Watch from '../assets/Watch.jpg'
 
 export default function Hero() {
   return (
@@ -32,7 +33,7 @@ export default function Hero() {
         <div className="flex min-h-[300px] items-center justify-center rounded-3xl bg-blue-100 p-8 md:min-h-[400px]">
           <div className="text-center">
             <div className="text-3xl md:text-4xl">
-              <img src='src/assets/Watch.jpg' alt='Watch' className='h-60 rounded-3xl max-sm:h-45 '/>
+              <img src={Watch} alt='Watch' className='h-60 rounded-3xl max-sm:h-45 '/>
             </div>
             <h3 className="mt-6 text-2xl font-bold text-gray-900">
               New Collection

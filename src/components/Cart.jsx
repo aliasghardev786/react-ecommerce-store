@@ -23,26 +23,34 @@ function Cart({ cart, onRemove }) {
             <div className="mt-8 space-y-4">
               {cart.map((product, index) => (
                 <div
-                  key={`${product.id}-${index}`}
-                  className="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4"
-                >
-                  <div>
-                    <h2 className="font-bold text-gray-900">
-                      {product.emoji} {product.name}
-                    </h2>
+  key={`${product.id}-${index}`}
+  className="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
+>
+  <div className="flex items-center gap-4">
+    <img
+      src={product.img}
+      alt={product.alt}
+      className="h-16 w-16 shrink-0 rounded-lg object-cover"
+    />
 
-                    <p className="mt-1 text-blue-600">
-                      Rs. {product.price.toLocaleString()}
-                    </p>
-                  </div>
+    <div className="min-w-0">
+      <h2 className="font-bold text-gray-900 break-words">
+        {product.name}
+      </h2>
 
-                  <button
-                    onClick={() => onRemove(index)}
-                    className="rounded-lg bg-red-100 px-3 py-2 text-sm text-red-700 hover:bg-red-200"
-                  >
-                    Remove
-                  </button>
-                </div>
+      <p className="mt-1 text-blue-600">
+        Rs. {product.price.toLocaleString()}
+      </p>
+    </div>
+  </div>
+
+  <button
+    onClick={() => onRemove(index)}
+    className="w-full rounded-lg bg-red-100 px-3 py-2 text-sm text-red-700 hover:bg-red-200 sm:w-auto"
+  >
+    Remove
+  </button>
+</div>
               ))}
             </div>
 
