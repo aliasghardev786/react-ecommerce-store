@@ -25,7 +25,7 @@ import About from './components/About';
     }
 
 
-    function removeFromCart(indexToRemove) {
+    let removeFromCart=(indexToRemove)=> {
   setCart((oldCart) =>
     oldCart.filter((_, index) => index !== indexToRemove)
   )}

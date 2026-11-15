@@ -10,8 +10,8 @@ export default function Navbar({cartCount}) {
           2X  Store
         </h1>
 
-        <div className="  items-center gap-5 md:flex">
-          <Link  to="/" className="text-gray-700 font-medium max-sm:flex max-sm:mb-1 hover:text-white hover:bg-blue-600 hover:border-2 border-blue-600 rounded-3xl px-3">
+        <div className="  items-center gap-5  md:flex">
+          <Link  to="/" className="text-gray-700 ~ font-medium max-sm:flex max-sm:mb-1 hover:text-white hover:bg-blue-600 hover:border-2 border-blue-600 rounded-3xl px-3">
             Home
           </Link>
           

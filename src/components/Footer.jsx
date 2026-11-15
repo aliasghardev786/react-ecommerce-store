@@ -9,7 +9,7 @@ function Footer() {
         {/* Brand Section */}
         <div>
           <h2 className="text-2xl font-bold text-white">
-            2x <span className="text-blue-500">Store</span>
+            2x <span className="text-blue-600">Store</span>
           </h2>
 
           <p className="mt-4 max-w-sm text-sm leading-7 text-gray-400">
@@ -28,7 +28,7 @@ function Footer() {
             <li>
               <a
                 href="#Home"
-                className="transition hover:text-blue-400"
+                className="transition hover:text-blue-600"
               >
                 Home
               </a>
@@ -37,7 +37,7 @@ function Footer() {
             <li>
               <a
                 href="#products"
-                className="transition hover:text-blue-400"
+                className="transition hover:text-blue-600"
               >
                 Products
               </a>
@@ -46,7 +46,7 @@ function Footer() {
             <li>
               <Link
                 to="/cart"
-                className="transition hover:text-blue-400"
+                className="transition hover:text-blue-600"
               >
                 Shopping Cart
               </Link>
@@ -63,23 +63,25 @@ function Footer() {
           <ul className="mt-4 space-y-4 text-sm">
             <li>
               <span className="block text-gray-500">
-                Email
+                <i className="fa-solid fa-envelope mr-2"></i>
+                 Email:
               </span>
               <a
                 href="mailto:aliasghar.dev.official@gmail.com"
-                className="break-all transition hover:text-blue-400"
+                className="break-all transition hover:text-blue-600 ml-7"
               >
-                aliasghar.dev.official@gmail.com
+              aliasghar.dev.official@gmail.com
               </a>
             </li>
 
             <li>
               <span className="block text-gray-500">
-                Phone
+              <i className="fa-solid fa-phone mr-2"></i>
+                Phone:
               </span>
               <a
-                href="tel:+923241713010"
-                className="transition hover:text-blue-400"
+                href="tel:+92-324-171-3010"
+                className="transition hover:text-blue-600 ml-7"
               >
                 +92 324 1713010
               </a>
@@ -87,13 +89,14 @@ function Footer() {
 
             <li>
               <span className="block text-gray-500">
-                LinkedIn
+                <i class="fa-brands fa-linkedin mr-2"></i>
+                LinkedIn:
               </span>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/ali-asghar-356785447"
                 target="_blank"
                 rel="noreferrer"
-                className="transition hover:text-blue-400"
+                className="transition hover:text-blue-600 ml-7"
               >
                 Visit my LinkedIn
               </a>
@@ -106,7 +109,7 @@ function Footer() {
       <div className="border-t border-gray-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-5 text-center text-sm text-gray-500 sm:flex-row md:px-10">
           <p>
-            © {new Date().getFullYear()} Nova Store. All rights reserved.
+            © {new Date().getFullYear()} 2x-store Store. All rights reserved.
           </p>
 
           <p>

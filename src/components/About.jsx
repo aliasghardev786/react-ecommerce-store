@@ -119,12 +119,12 @@ function About() {
       {/* Bottom Message */}
       <section className="bg-gray-950 px-6 py-12 text-center text-white">
         <h2 className="text-2xl font-bold md:text-3xl">
-          Thank You for Visiting 2X Store!
+          Thank You for Visiting 2X-Store!
         </h2>
 
         <p className="mx-auto mt-4 max-w-xl leading-7 text-gray-400">
           Thank you for taking the time to explore our website.
-          We hope you enjoy browsing Nova Store.
+          We hope you enjoy browsing 2x-Store.
         </p>
       </section>
 
